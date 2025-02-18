@@ -112,7 +112,9 @@ This formula prioritizes **totalAverageWeightRatings** (50% weight), followed by
 
     ## 1. Most Difficult Technical Problems:
 
-    Some of the hardest challenges I have faced are related to **scalability** and **data consistency**. In one project, I had to design a system with a highly dynamic dataset where records were frequently updated in real-time. The challenge was to ensure that these updates were consistent across a distributed system without causing data loss or performance degradation. I tackled this by implementing **event-driven architecture** with **message queues** to handle updates efficiently and maintain consistency. I also relied on **transactional integrity** to prevent conflicts when multiple services tried to update the same record simultaneously.
+    One of the toughest challenges I faced was related to scalability and data consistency. In one project, I had to ensure real-time updates were consistent across a distributed system without causing data loss. I resolved this by creating an API endpoint that combined fields from two database tables and returned a unified response.
+
+    In a previous job, I stayed up all night to meet client requirements related to AWS. The issues were complex, but through determination and alot of self learning, I was able to resolve them and deliver the solution on time.
 
     ## 2. Project Approach:
 
