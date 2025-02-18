@@ -98,47 +98,47 @@ userScore = (totalAverageWeightRatings * 0.5) + (numberOfRents * 0.3) + (recentl
 This formula prioritizes **totalAverageWeightRatings** (50% weight), followed by **numberOfRents** (30% weight), and lastly **recentlyActive** (20% weight), where `recentlyActive` is normalized to a scale that fits into the formula by dividing by \(10^9\) (to scale the epoch time).
 
 2. **Firestore Query**:  
-After storing this `userScore` field for each document, you can easily query for the highest potential users in descending order of `userScore`, like so:
-
-```javascript
-db.collection("USERS")
-  .orderBy("userScore", "desc")
-  .limit(10); // Adjust the limit for pagination as needed
-  
-  This will return the top users based on the combination of all three factors, sorted in the desired order.
+    After storing this `userScore` field for each document, you can easily query for the highest potential users in descending order of `userScore`, like so:
 
 
-# Personality & Technical Questions
-
-## 1. Most Difficult Technical Problems:
-
-Some of the hardest challenges I have faced are related to **scalability** and **data consistency**. In one project, I had to design a system with a highly dynamic dataset where records were frequently updated in real-time. The challenge was to ensure that these updates were consistent across a distributed system without causing data loss or performance degradation. I tackled this by implementing **event-driven architecture** with **message queues** to handle updates efficiently and maintain consistency. I also relied on **transactional integrity** to prevent conflicts when multiple services tried to update the same record simultaneously.
-
-## 2. Project Approach:
-
-When working on a project, I typically follow a **structured and agile approach**:
-
-- **Requirement Gathering & Planning**: Understand the project's functional requirements, define user stories, and break down the work into tasks.
-- **Implementation**: Write clean, well-documented code and frequently commit to version control.
-- **Deployment & Monitoring**: Deploy the system and use monitoring tools to keep track of performance and bugs.
-
-## 3. Learning a New Topic:
-
-To learn a new topic effectively, I:
-
-- **Start with the basics** and work my way up to more advanced concepts.
-- **Use a mix of learning methods**, including reading documentation, watching tutorials, and practicing hands-on.
-- **Build small projects** as I learn to apply what I've absorbed.
+    db.collection("USERS")
+    .orderBy("userScore", "desc")
+    .limit(10); // Adjust for pagination as needed
+    
+    This will return the top users based on the combination of all three factors, sorted in the desired order.
 
 
-## 4. "Consistency" vs "Fast & Efficient":
+    # Personality & Technical Questions
 
-I value **consistency** more. While speed is important, ensuring that the system remains reliable, scalable, and maintainable in the long run is essential.
+    ## 1. Most Difficult Technical Problems:
 
-## 5. Apple Products:
+    Some of the hardest challenges I have faced are related to **scalability** and **data consistency**. In one project, I had to design a system with a highly dynamic dataset where records were frequently updated in real-time. The challenge was to ensure that these updates were consistent across a distributed system without causing data loss or performance degradation. I tackled this by implementing **event-driven architecture** with **message queues** to handle updates efficiently and maintain consistency. I also relied on **transactional integrity** to prevent conflicts when multiple services tried to update the same record simultaneously.
 
-No
+    ## 2. Project Approach:
 
-## 6. Immediate Availability:
+    When working on a project, I typically follow a **structured and agile approach**:
 
-I can start as soon as **5th March**. If there are any onboarding processes or preparations, I can begin those immediately.
+    - **Requirement Gathering & Planning**: Understand the project's functional requirements, define user stories, and break down the work into tasks.
+    - **Implementation**: Write clean, well-documented code and frequently commit to version control.
+    - **Deployment & Monitoring**: Deploy the system and use monitoring tools to keep track of performance and bugs.
+
+    ## 3. Learning a New Topic:
+
+    To learn a new topic effectively, I:
+
+    - **Start with the basics** and work my way up to more advanced concepts.
+    - **Use a mix of learning methods**, including reading documentation, watching tutorials, and practicing hands-on.
+    - **Build small projects** as I learn to apply what I've absorbed.
+
+
+    ## 4. "Consistency" vs "Fast & Efficient":
+
+    I value **consistency** more. While speed is important, ensuring that the system remains reliable, scalable, and maintainable in the long run is essential.
+
+    ## 5. Apple Products:
+
+    No
+
+    ## 6. Immediate Availability:
+
+    I can start as soon as **5th March**. If there are any onboarding processes or preparations, I can begin those immediately.
