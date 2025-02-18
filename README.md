@@ -73,15 +73,14 @@ To run both the backend and frontend concurrently during development:
 
 ## Resolving Port Conflicts 
 Can use the kill-port package to kill the process occupying a specific port: 
-  
-   ```bash
-   npx kill-port <port_number>
+
+   npx kill-port PORTNUMBER
 
 THEN TRY AGAIN
 
 
 
-# Firestore Query for Multi-Factor Ranking
+## Firestore Query for Multi-Factor Ranking
 
 To implement a multi-factor ranking system in Firestore based on the factors you mentioned, we can't directly combine them into a single compound index for the "totalAverageWeightRatings", "numberOfRents", and "recentlyActive" fields. Firestore allows multi-field sorting but only in a hierarchical manner, which limits the ability to truly prioritize them simultaneously.
 
